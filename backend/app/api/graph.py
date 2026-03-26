@@ -382,7 +382,7 @@ def build_graph():
                 )
                 
                 # 创建图谱构建服务
-                builder = GraphBuilderService(api_key=Config.ZEP_API_KEY)
+                builder = GraphBuilderService()  # Local graph engine, no API key needed
                 
                 # 分块
                 task_manager.update_task(
@@ -573,7 +573,7 @@ def get_graph_data(graph_id: str):
                 "error": "ZEP_API_KEY未配置"
             }), 500
         
-        builder = GraphBuilderService(api_key=Config.ZEP_API_KEY)
+        builder = GraphBuilderService()  # Local graph engine, no API key needed
         graph_data = builder.get_graph_data(graph_id)
         
         return jsonify({
@@ -601,7 +601,7 @@ def delete_graph(graph_id: str):
                 "error": "ZEP_API_KEY未配置"
             }), 500
         
-        builder = GraphBuilderService(api_key=Config.ZEP_API_KEY)
+        builder = GraphBuilderService()  # Local graph engine, no API key needed
         builder.delete_graph(graph_id)
         
         return jsonify({
