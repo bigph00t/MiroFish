@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://github.com/bigph00t/MiroFish/raw/main/static/images/miromax_logo.png" alt="MiroMax Logo" width="75%"/>
+<img src="./static/images/miromax_logo.png" alt="MiroMax Logo" width="75%"/>
 
 [![GitHub Stars](https://img.shields.io/github/stars/bigph00t/MiroFish?style=flat-square&color=DAA520)](https://github.com/bigph00t/MiroFish/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/bigph00t/MiroFish?style=flat-square)](https://github.com/bigph00t/MiroFish/network)
